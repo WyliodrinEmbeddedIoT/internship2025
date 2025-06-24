@@ -1,4 +1,4 @@
-# AndreiDragota
+# Andrei Dragota
 
 ## 23 June 2025
 During the day I recapped most of Rust's programming language intrinsics by going through https://tourofrust.com/TOC_en.html, finished 8 chapters out of 9.'
