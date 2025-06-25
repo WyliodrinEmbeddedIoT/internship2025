@@ -6,3 +6,6 @@ Wrote some notes and asked questions around the office for things I didn't catch
 
 ## 24 June 2025
 Finished the last chapter on Tour of Rust, started working on a issue on GitHub project regarding x86 architecture on Tock. Wrote a basic kernel with a VGA (text) buffer and added support for simple unit tests. Installed QEMU emulator to boot the kernel on a virtual machine to test it out, and to also write via serial UART on console. Tomorrow I will move on to the next topics regarding exceptions, timeouts, etc.
+
+## 25 June 2025
+Explored everything about CPU interrupts and exceptions. Wrapped up the testing part. Updated my kernel to support handling for double/triple faults, support for GDT, TSS, IDT, from the x86_64 crate. Ready to move on to hardware interrupts based on Intel 8259 PIC.  
