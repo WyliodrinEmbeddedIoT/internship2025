@@ -17,3 +17,7 @@
 - Completed the Morse code exercise from MA Lab 2 which I missed and spent 1 hour on it (no_std environment demands another approach to Strings)
 - Started the MA Lab 5 and started struggling with SPI, continue tommorow
 
+## 26 June 2025
+- Completed MA Lab 5 and MA Lab 6, SPI and I2C were revisited
+- Reached 45/94 exercise from Rustlings (complete at home)
+
