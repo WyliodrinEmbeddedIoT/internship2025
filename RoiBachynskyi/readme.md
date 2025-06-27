@@ -19,5 +19,10 @@
 
 ## 26 June 2025
 - Completed MA Lab 5 and MA Lab 6, SPI and I2C were revisited
-- Reached 45/94 exercise from Rustlings (complete at home)
+- Reached 45/94 exercise from Rustlings
+
+## 27 June 2025
+- Reached 69/94 exercise from Rustlings
+- Started to learn how to use Helix Editor
+- Started organizing the workspace
 
