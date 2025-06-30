@@ -32,5 +32,6 @@
 
 - Moved to the lab computer and installed Ubuntu
 - Installed i3 window manager to start learnign no-mouse way of using the computer and OS
-- 
+- Chose my [first issue](https://github.com/orgs/WyliodrinEmbeddedIoT/projects/1?pane=issue&itemId=116432064&issue=WyliodrinEmbeddedIoT%7Cembassy%7C4)
+- Flashed the NXP board
 
