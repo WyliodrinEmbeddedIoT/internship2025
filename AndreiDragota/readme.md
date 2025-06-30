@@ -15,3 +15,6 @@ Finished hardware interrupts, manage to solve deadlock + race conditions issues 
 
 ## 27 June 2025
 Started working on implementing translation between physical and virtual addresses. Fixed an issue in my kernel where I couldn't invoke a private function from memory.rs to read the 4th page table's contents in main.rs. Moved on with implemeting address maping and frame allocation, will finish it next week. Also learnt how to use helix editor and zellij window manager.
+
+## 30 June 2025
+Wrapped up paging implementation by creating a maper and a frame allocator. Moved on with heap allocation, learnt about static and local variables, implemented an allocator interface and a heap memory stack. Finally added and debugged testing framework from last week in order to add heap memory tests, took quite a while but it's working.
