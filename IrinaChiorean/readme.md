@@ -20,3 +20,11 @@ Started working on Lab 5 and finished 2 exercices.
 
 Completed all the labs (except 7 because it can't be done with the STM32F4).
 Started working on rustlings and completed around 30% of it.
+
+## 27 June 2025
+
+Got to the 50% mark on the rustlings exercices.
+
+## 30 June 2025
+
+Got to the 80% mark on the rustlings exercices. 
