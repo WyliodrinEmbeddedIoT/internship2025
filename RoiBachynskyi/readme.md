@@ -26,3 +26,11 @@
 - Started to learn how to use Helix Editor
 - Started organizing the workspace
 
+## 30 June 2025
+- Completed Rustlings 
+![Rustlings Fe-nish](https://github.com/user-attachments/assets/0c2fa26a-1e5a-485a-a8a6-1218551ee443)
+
+- Moved to the lab computer and installed Ubuntu
+- Installed i3 window manager to start learnign no-mouse way of using the computer and OS
+- 
+
