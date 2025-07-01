@@ -18,3 +18,6 @@ Started working on implementing translation between physical and virtual address
 
 ## 30 June 2025
 Wrapped up paging implementation by creating a maper and a frame allocator. Moved on with heap allocation, learnt about static and local variables, implemented an allocator interface and a heap memory stack. Finally added and debugged testing framework from last week in order to add heap memory tests, took quite a while but it's working.
+
+## 1 July 2025
+Finally finished the whole memory management chapter. I learnt how to design memory allocators by implementing bump, linked lists and fixed-size block allocator. Moved on to the final chapter, multi-tasking. Fiddled with async/await feature and multitasking, will add soon support for this in my basic kernel, then I will learn a bit about pinning in this context. Learnt the file structure/architecture for TockOS. I should start implementing x86 support for VGA on Tock real soon!!
