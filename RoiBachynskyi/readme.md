@@ -35,3 +35,10 @@
 - Chose my [first issue](https://github.com/orgs/WyliodrinEmbeddedIoT/projects/1?pane=issue&itemId=116432064&issue=WyliodrinEmbeddedIoT%7Cembassy%7C4)
 - Flashed the NXP board
 
+## 1 July 2025
+- Tried to flash the examples for the NXP Board: `blinky_nop` worked as intended, `button_executor` didn't print anything
+- Spent 1 hour trying to understand what is wrong in the second example
+- Explored `pint.rs` and `gpio.rs` files
+- Thanks to George, the problem was found: allegedly, the asyncronous program didn't work because of the secure and non-secure mode. The only thing that could fix it is 1) flashing 2) `probe-rs attach` 3) pressing the reset button
+- Explored the `fmt` module in `embassy-rp` which was used in `embassy-nxp`
+- Not finished writing the code for features because of feature propagation 
