@@ -42,3 +42,9 @@
 - Thanks to George, the problem was found: allegedly, the asyncronous program didn't work because of the secure and non-secure mode. The only thing that could fix it is 1) flashing 2) `probe-rs attach` 3) pressing the reset button
 - Explored the `fmt` module in `embassy-rp` which was used in `embassy-nxp`
 - Not finished writing the code for features because of feature propagation 
+
+## 2 July 2025
+- Read a half of the book about macros ([link](https://lukaswirth.dev/tlborm/introduction.html)) to understand what happens in `fmt.rs`
+- Thanks to George, understood the logic behind `defmt` and `log`
+- Implemented `log-to-defmt` feature
+- Closed my first issue
