@@ -28,4 +28,5 @@ finished 88/94 rustlings
 
 Finished Rustlings
 
-Started working on the STM
+Started working on the STM32
+Made leds blink using gpio lab
