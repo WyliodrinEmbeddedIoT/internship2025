@@ -30,3 +30,11 @@ Finished Rustlings
 
 Started working on the STM32
 Made leds blink using gpio lab
+
+Assigned fisrt task:
+
+Implement 8042 peripheral
+#23
+
+
+Must install Linux in order to continue
