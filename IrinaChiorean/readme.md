@@ -48,3 +48,8 @@ sudo nano /etc/udev/rules.d/55-nxp.rules
 3. Inside 55-nxp.rules I added this line:
 
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="1fc9", ATTRS{idProduct}=="0090", MODE="0660", TAG+="uaccess"
+
+## 2 July 2025
+
+Finished my first issue and submitted it for review, then looked over the implementation of time drivers in embassy. 
+Helped some of the others with the issues I have previously ran into.
