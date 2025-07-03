@@ -43,11 +43,11 @@ This is what I did to fix it:
 1. By running "lsusb" I found the relevant line "Bus 001 Device 019: ID 1fc9:0090 NXP Semiconductors LPC-LINK2 CMSIS-DAP V5.224" .
   
 2. I created a new udev rules file inside /etc/udev/rules.d/. I named it 55-nxp.rules (the 55 just determines the order in which udev loads the rules).
-sudo nano /etc/udev/rules.d/55-nxp.rules
+`sudo nano /etc/udev/rules.d/55-nxp.rules`
 
 3. Inside 55-nxp.rules I added this line:
 
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="1fc9", ATTRS{idProduct}=="0090", MODE="0660", TAG+="uaccess"
+`SUBSYSTEMS=="usb", ATTRS{idVendor}=="1fc9", ATTRS{idProduct}=="0090", MODE="0660", TAG+="uaccess"`
 
 ## 2 July 2025
 
