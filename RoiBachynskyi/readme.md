@@ -48,3 +48,9 @@
 - Thanks to George, understood the logic behind `defmt` and `log`
 - Implemented `log-to-defmt` feature
 - Closed my first issue
+
+## 3 July 2025
+- Chose my new [issue](https://github.com/WyliodrinEmbeddedIoT/embassy/issues/3) 
+- Read a chapter about USART to understand how it works on this board
+- Made some changes in the pull request as George asked me
+- Started reading `embassy-rp` implementation of UART
