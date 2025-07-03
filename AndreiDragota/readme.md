@@ -24,3 +24,6 @@ Finally finished the whole memory management chapter. I learnt how to design mem
 
 ## 2 July 2025
 After a week and a half I finished implementing a basic kernel, today I added the last bits of pinning concept, coming with cooperative multitasking, wakers and constructors. Cloned the Tock repo and fiddled with its directories and code architecture. I managed to solve a small bug that prevented me from booting tock kernel on qemu. 
+
+## 3 July 2025
+Started working on my task of implementing a VGA driver. Wrote the peripherals to enter VGA mode and declared the const in configs. I wrote some code in order to test the resolution implementation, still have some bugs as it renders the correct resolution, but nothing is shown on screen, could be a crate loading issue or maybe the buffer is overwritten. However, everything works fine in text mode, I can print colored letters and it's working fine (still no keyboard support for VGA though).
