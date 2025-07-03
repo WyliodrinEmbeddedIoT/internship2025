@@ -53,3 +53,7 @@ This is what I did to fix it:
 
 Finished my first issue and submitted it for review, then looked over the implementation of time drivers in embassy. 
 Helped some of the others with the issues I have previously ran into.
+
+## 3 July 2025
+
+Today I chose a new [task](https://github.com/WyliodrinEmbeddedIoT/embassy/issues/5) and carefully researched and read up on it.
