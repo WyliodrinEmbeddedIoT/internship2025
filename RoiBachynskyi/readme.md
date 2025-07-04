@@ -54,3 +54,9 @@
 - Read a chapter about USART to understand how it works on this board
 - Made some changes in the pull request as George asked me
 - Started reading `embassy-rp` implementation of UART
+
+## 4 July 2025
+- Found a [pinout](https://mcuxpresso.nxp.com/en/pins) for LPC55S69 board (the datasheet is indeed awful)
+- Wrote down pins for UART for each Flexcomm
+- Found an instruction how to work with USART on LPC55S69 (planning to work on the implementation during the weekend)
+- Explored `lpc55-pac`  
