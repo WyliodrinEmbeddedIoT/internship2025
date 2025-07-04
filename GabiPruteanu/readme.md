@@ -10,7 +10,7 @@ I completed the Tour of Rust and began working on the Rustlings exercises. I als
 I worked on the Rustlings exercises and tried to fix one issues but it is still work in progress.
 
 ## 3 July 2025
-I worked on the issue #45, and got it almost done
+I worked on the issue #48, and got it almost done
 
 ## 4 July 2025
 Fixed the last problems with the issue and tried testing the functionality on a stm32f4, but it didnt work because the version of tock for stm32f4 doesnt have a bootloader and i need a microbit in order to test the functionality, but i dont have one and the issue was left still in review till i can get my hands on a microbit.
