@@ -21,3 +21,12 @@ Wrapped up paging implementation by creating a maper and a frame allocator. Move
 
 ## 1 July 2025
 Finally finished the whole memory management chapter. I learnt how to design memory allocators by implementing bump, linked lists and fixed-size block allocator. Moved on to the final chapter, multi-tasking. Fiddled with async/await feature and multitasking, will add soon support for this in my basic kernel, then I will learn a bit about pinning in this context. Learnt the file structure/architecture for TockOS. I should start implementing x86 support for VGA on Tock real soon!!
+
+## 2 July 2025
+After a week and a half I finished implementing a basic kernel, today I added the last bits of pinning concept, coming with cooperative multitasking, wakers and constructors. Cloned the Tock repo and fiddled with its directories and code architecture. I managed to solve a small bug that prevented me from booting tock kernel on qemu. 
+
+## 3 July 2025
+Started working on my task of implementing a VGA driver. Wrote the peripherals to enter VGA mode and declared the const in configs. I wrote some code in order to test the resolution implementation, still have some bugs as it renders the correct resolution, but nothing is shown on screen, could be a crate loading issue or maybe the buffer is overwritten. However, everything works fine in text mode, I can print colored letters and it's working fine (still no keyboard support for VGA though).
+
+## 4 July 2025
+Debugged and tested my implementation from previous day. I also started adding scrolling support, will flesh it out next week. Also opened my first pull request !!!  (it's in rough shape but I can fix most of the reported issues :D ) 
