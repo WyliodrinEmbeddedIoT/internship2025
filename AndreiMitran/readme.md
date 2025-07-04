@@ -55,3 +55,11 @@ Additional steps:
 -installed rust on linux
 
 
+## --04/07/2025--
+
+Woring on the kernel system
+Having trouble with "Can't find crate for 'test'
+So far I finished going through the fisrt chapter of making a kernel
+I have fixed some basic issues.
+
+I will come with updates
