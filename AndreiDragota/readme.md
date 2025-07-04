@@ -27,3 +27,6 @@ After a week and a half I finished implementing a basic kernel, today I added th
 
 ## 3 July 2025
 Started working on my task of implementing a VGA driver. Wrote the peripherals to enter VGA mode and declared the const in configs. I wrote some code in order to test the resolution implementation, still have some bugs as it renders the correct resolution, but nothing is shown on screen, could be a crate loading issue or maybe the buffer is overwritten. However, everything works fine in text mode, I can print colored letters and it's working fine (still no keyboard support for VGA though).
+
+## 4 July 2025
+Debugged and tested my implementation from previous day. I also started adding scrolling support, will flesh it out next week. Also opened my first pull request !!!  (it's in rough shape but I can fix most of the reported issues :D ) 
