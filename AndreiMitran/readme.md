@@ -47,3 +47,11 @@ Made progress.. ... ...
 3. went through libtock-rs (didn't work) and then tried libtock-c and flashed on the nucleof429
 the STM32 is blinking now thanks to tockloader
 
+
+Additional steps:
+-Customised VS Code to my liking on linux too
+-Fixed issue with SSD
+-Other set-ups necessary for linux
+-installed rust on linux
+
+
