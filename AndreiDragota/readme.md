@@ -30,3 +30,6 @@ Started working on my task of implementing a VGA driver. Wrote the peripherals t
 
 ## 4 July 2025
 Debugged and tested my implementation from previous day. I also started adding scrolling support, will flesh it out next week. Also opened my first pull request !!!  (it's in rough shape but I can fix most of the reported issues :D ) 
+
+## 7 July 2025
+Debugged the driver, moved configs inside the crates I'm working on still could not find the issue where scrolling doesn't work, will check tomorrow.
