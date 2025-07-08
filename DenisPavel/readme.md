@@ -1,5 +1,7 @@
 # Denis-Iulian Pavel
-Github: LithTheFox
+Username: LithTheFox
+Github: LithDefaux 
+Email: denispavel94@gmail.com
 
 ## 01 July 2025
 Started the internship and began Tour of Rust and Rustlings.
