@@ -63,3 +63,12 @@ So far I finished going through the fisrt chapter of making a kernel
 I have fixed some basic issues.
 
 I will come with updates
+
+## --08/07/2025--
+
+Kernel system in rust: added keyboard reader
+Bug found: Cannot compile with latest rustc nightly 1.90.0
+Works: 1.88.0 nightly 
+
+Must finish the kernel in order to convert into tock
+
