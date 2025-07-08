@@ -33,3 +33,6 @@ Debugged and tested my implementation from previous day. I also started adding s
 
 ## 7 July 2025
 Debugged the driver, moved configs inside the crates I'm working on still could not find the issue where scrolling doesn't work, will check tomorrow.
+
+## 8 July 2025
+Debugged even further, reached a certain milestone but I don't know how to continue with it, there's an issue I can't find in my code, I require some help :( . Cargo runner is implemented and also QEMU detects and opens a VGA port. However, I can't implement the scrolling test, weirdly enough if I map some colored text directly on the exposed buffer it works but printing 200 lines doesn't.
