@@ -36,3 +36,6 @@ Debugged the driver, moved configs inside the crates I'm working on still could 
 
 ## 8 July 2025
 Debugged even further, reached a certain milestone but I don't know how to continue with it, there's an issue I can't find in my code, I require some help :( . Cargo runner is implemented and also QEMU detects and opens a VGA port. However, I can't implement the scrolling test, weirdly enough if I map some colored text directly on the exposed buffer it works but printing 200 lines doesn't.
+
+## 9 July 2025
+Finally found why it wasn't working. Basically since I wrote directly in main.rs some scrolling tests I found out why it was not reading from my vga.rs. Basically : Direct in main.rs → used read_volatile/write_volatile per cell → works . In vga.rs → I used ptr::copy (non-volatile) → compiler caches it away → no visible scroll. Next time I will switch to the per-cell volatile loop and hopefully it will act the same. But it feels good to finally know what the issue was ◝(ᵔᗜᵔ)◜!
