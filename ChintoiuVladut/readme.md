@@ -18,3 +18,12 @@ Succesfully flashed the board with Tock and installed blink and c_hello on it us
 I worked with Genan on identifying what should be written in order flash the LPC55S69 with a loop that keeps the nop open. I have focused on memory layout and ensured that nothing is missing.
 
 We have worked on building and flashing the board with the looping script, however, sections are missing from the ELF file (like .text, .rodata, .data, .bss), which make flashing the build impossible. We shall further work on this issue tomorrow.
+
+## 8.07.2025
+We have solved the above issue with the help of our mentors, the issue being a missing line which included the linker script usage.
+
+## 9.07.2025
+Started reading up on the implementation of UART to the LPC55S69 board. I tried to obtain the needed file from the .svd to working, but without success. I have used svd2rust, which uses a different format from what we needed, so my colleague found a quick fix for svd2regs, which we needed.
+
+## 10.07.2025
+Started adapting the UART script by identifying the functions of the registers. Implemented part of the functions needed to make it work.
