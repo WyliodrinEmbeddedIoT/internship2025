@@ -39,3 +39,6 @@ Debugged even further, reached a certain milestone but I don't know how to conti
 
 ## 9 July 2025
 Finally found why it wasn't working. Basically since I wrote directly in main.rs some scrolling tests I found out why it was not reading from my vga.rs. Basically : Direct in main.rs → used read_volatile/write_volatile per cell → works . In vga.rs → I used ptr::copy (non-volatile) → compiler caches it away → no visible scroll. Next time I will switch to the per-cell volatile loop and hopefully it will act the same. But it feels good to finally know what the issue was ◝(ᵔᗜᵔ)◜!
+
+## 11 July 2025
+Fully implemented the VGA driver, had some issues with Git while making commits, opened a new PR with all the changes to keep things fresh https://github.com/WyliodrinEmbeddedIoT/tock/pull/33
