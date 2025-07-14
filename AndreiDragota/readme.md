@@ -42,3 +42,6 @@ Finally found why it wasn't working. Basically since I wrote directly in main.rs
 
 ## 11 July 2025
 Fully implemented the VGA driver, had some issues with Git while making commits, opened a new PR with all the changes to keep things fresh https://github.com/WyliodrinEmbeddedIoT/tock/pull/33
+
+## 14 July 2025
+Started work on https://github.com/WyliodrinEmbeddedIoT/tock/issues/23, read all about PS/2 controllers on https://wiki.osdev.org/I8042_PS/2_Controller and implemented some code as basis, check https://github.com/WyliodrinEmbeddedIoT/tock/pull/34 commits
