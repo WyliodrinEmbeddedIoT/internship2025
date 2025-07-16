@@ -45,3 +45,6 @@ Fully implemented the VGA driver, had some issues with Git while making commits,
 
 ## 14 July 2025
 Started work on https://github.com/WyliodrinEmbeddedIoT/tock/issues/23, read all about PS/2 controllers on https://wiki.osdev.org/I8042_PS/2_Controller and implemented some code as basis, check https://github.com/WyliodrinEmbeddedIoT/tock/pull/34 commits
+
+## 15 July 2025
+Worked with @SeriouslyAndy on https://github.com/WyliodrinEmbeddedIoT/tock/pull/34, implemented most of the requirements including HIL, full initialisation for the peripheral and interrupts handling shenaningans. Should maintain it until further review changes.
