@@ -48,3 +48,6 @@ Started work on https://github.com/WyliodrinEmbeddedIoT/tock/issues/23, read all
 
 ## 15 July 2025
 Worked with @SeriouslyAndy on https://github.com/WyliodrinEmbeddedIoT/tock/pull/34, implemented most of the requirements including HIL, full initialisation for the peripheral and interrupts handling shenaningans. Should maintain it until further review changes.
+
+## 16 July 2025
+Finished up the 8042 driver and debugged it even further. LGTM. I started working on a keyboard driver over 8042. Read all about it on https://wiki.osdev.org/PS/2_Keyboard . Our final goal is to port the whole process console from UART serial to VGA... which will take a while but I think it will be fun :D. 
