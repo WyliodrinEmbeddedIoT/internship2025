@@ -51,3 +51,6 @@ Worked with @SeriouslyAndy on https://github.com/WyliodrinEmbeddedIoT/tock/pull/
 
 ## 16 July 2025
 Finished up the 8042 driver and debugged it even further. LGTM. I started working on a keyboard driver over 8042. Read all about it on https://wiki.osdev.org/PS/2_Keyboard . Our final goal is to port the whole process console from UART serial to VGA... which will take a while but I think it will be fun :D. 
+
+## 17 July 2025
+Read all about process console and VGA Text implemenation on that console. I came up with a plan to swap the UART serial console with a VGA one. First, I need to make sure that the keyboard is working fine on that 8042 peripheral. Then I can start working on the text console. After I'm done with testing out the VGA console, then I can swap them out and test them further. I split a bigger issue in 2 smaller ones to keep things organized. https://github.com/WyliodrinEmbeddedIoT/tock/issues/36
