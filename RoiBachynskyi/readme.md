@@ -60,3 +60,10 @@
 - Wrote down pins for UART for each Flexcomm
 - Found an instruction how to work with USART on LPC55S69 (planning to work on the implementation during the weekend)
 - Explored `lpc55-pac`  
+
+## 5-17 July 2025
+- On vacation with my family
+
+## 18 July 2025
+- Fixed last problems in my ```log-to-defmt``` issue, rebased the changes from ```embassy``` GitHub repository and started my first [PR](https://github.com/embassy-rs/embassy/pull/4416)
+- Started to implement USART following the documentation advice
