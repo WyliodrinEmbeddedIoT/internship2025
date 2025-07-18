@@ -54,3 +54,6 @@ Finished up the 8042 driver and debugged it even further. LGTM. I started workin
 
 ## 17 July 2025
 Read all about process console and VGA Text implemenation on that console. I came up with a plan to swap the UART serial console with a VGA one. First, I need to make sure that the keyboard is working fine on that 8042 peripheral. Then I can start working on the text console. After I'm done with testing out the VGA console, then I can swap them out and test them further. I split a bigger issue in 2 smaller ones to keep things organized. https://github.com/WyliodrinEmbeddedIoT/tock/issues/36
+
+## 18 July 2025
+I'd say the keyboard is 50% implemented, all of the tests at the driver level seem to pass, we just need to clean up the init in the PS/2 controller to let other devices connect. Next thing would be to write a small capsule for future VGA implementation and test the keyboard even more (and ofc. to run make prepush and solve those small issues :D ) https://github.com/WyliodrinEmbeddedIoT/tock/pull/35 
