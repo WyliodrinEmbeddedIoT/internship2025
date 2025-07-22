@@ -27,3 +27,18 @@ Started reading up on the implementation of UART to the LPC55S69 board. I tried 
 
 ## 10.07.2025
 Started adapting the UART script by identifying the functions of the registers. Implemented part of the functions needed to make it work.
+
+## 14.07.2025
+Further read on the clocks needed to allow the USART peripherals to work. This raises the issue of needing an additional implementation for syscon and a general implementations of clocks. Additionally, flexcomm must also be implemented, to allow USART mode selection in the 8 communication interfaces.
+
+## 15.07.2025
+Started the implementation of USART, without creating the additional resources. Attempted to create a working prototype over the USART provided by the debugger. Setup was unsuccesful.
+
+## 16.07.2025
+Corrected the mistakes made in the previous day and succesfully implemented USART as a prototype. Next step is to implement encapsulate the methods used belonging to each peripheral (syscon and flexcomm).
+
+## 17.07.2025
+Started working on clocks.rs, providing higher level methods for enabling USART. Implemented functions for all the FLEXCOMM interfaces, beyond the one needed for my prototype (FLEXCOMM0).
+
+## 21.07.2025
+Cleaned up the code and generalized some of the traits for easier use.
