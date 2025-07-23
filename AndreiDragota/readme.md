@@ -57,3 +57,6 @@ Read all about process console and VGA Text implemenation on that console. I cam
 
 ## 18 July 2025
 I'd say the keyboard is 50% implemented, all of the tests at the driver level seem to pass, we just need to clean up the init in the PS/2 controller to let other devices connect. Next thing would be to write a small capsule for future VGA implementation and test the keyboard even more (and ofc. to run make prepush and solve those small issues :D ) https://github.com/WyliodrinEmbeddedIoT/tock/pull/35 
+
+## 23 July 2025
+Finished up and polished the whole keyboard driver. Hopefully it works now. Next step would be to combine VGA + 8042 + Keyboard in order to add the text capsule over the keyboard.
