@@ -66,4 +66,14 @@
 
 ## 18 July 2025
 - Fixed last problems in my ```log-to-defmt``` issue, rebased the changes from ```embassy``` GitHub repository and started my first [PR](https://github.com/embassy-rs/embassy/pull/4416)
-- Started to implement USART following the documentation advice
+- Started to implement USART following the documentation advice (got a bit complicated)
+
+## 21 July 2025
+- Dirbaio asked to remake the commit
+- The initial guess was the correct one, therefore I read `fmt.rs` in `embassy-rp` several times once again, I added one more macro (`unimplemented!()`) that wasn't introduced in `embassy-rp`
+- Dirbaio approved my PR, yay!
+
+## 22 July 2025
+- Started to work on USART once again
+- Implemented writing to TX and reading from RX in loopback mode
+- Tried to figure out why it didn't work physically, but failed, continue tomorrow 
