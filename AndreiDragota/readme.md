@@ -60,3 +60,6 @@ I'd say the keyboard is 50% implemented, all of the tests at the driver level se
 
 ## 23 July 2025
 Finished up and polished the whole keyboard driver. Hopefully it works now. Next step would be to combine VGA + 8042 + Keyboard in order to add the text capsule over the keyboard.
+
+## 24 July 2025
+;-; I had to remove the HIL implementation from the controller and keyboard, teacher said it was too much. I'll miss it. I made sure the drivers are working and still function properly without HIL by exposing the required functions. Polished them up a bit. Tomorrow should do the same for the good old VGA driver.
