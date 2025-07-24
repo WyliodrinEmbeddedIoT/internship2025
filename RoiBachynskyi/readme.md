@@ -77,3 +77,10 @@
 - Started to work on USART once again
 - Implemented writing to TX and reading from RX in loopback mode
 - Tried to figure out why it didn't work physically, but failed, continue tomorrow 
+
+## 23 July 2025
+- Tried to debug my USART code and see what is wrong
+- Currently, it's failing to work in normal mode (instead of loopback mode), something is blocking the signal
+- Tried to debug it using Arduino Uno as a slave, but it didn't work out. Then, I thought the problem was in USART connection with the computer, but sadly, not.
+- Denis told me to look at `lpc-hal`, George suggesed looking at C-implementation
+- Helped Irina with her `nxp-pac` and `chiptool` (unfortunately, it doesn't have any documentation)
