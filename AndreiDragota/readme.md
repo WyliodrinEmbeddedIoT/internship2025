@@ -63,3 +63,6 @@ Finished up and polished the whole keyboard driver. Hopefully it works now. Next
 
 ## 24 July 2025
 ;-; I had to remove the HIL implementation from the controller and keyboard, teacher said it was too much. I'll miss it. I made sure the drivers are working and still function properly without HIL by exposing the required functions. Polished them up a bit. Tomorrow should do the same for the good old VGA driver.
+
+## 25 July 2025
+Polished the VGA driver by removing external dependency and wrote a new spin-mutex primitive. I think I overdone this but it works and it was fun learning the intrinsics. Furthermore, a new fix for booting on x86 has come up, however, due to some spaghetti code on my part (I believe), it doesn't boot on PS/2 and Keyboard controller, weirdly enough it boots on VGA. I'll see on Monday what's what. Maybe it has to do with the custom bash script I wrote to choose a feature, I don't know.
