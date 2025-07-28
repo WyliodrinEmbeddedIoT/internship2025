@@ -66,3 +66,6 @@ Finished up and polished the whole keyboard driver. Hopefully it works now. Next
 
 ## 25 July 2025
 Polished the VGA driver by removing external dependency and wrote a new spin-mutex primitive. I think I overdone this but it works and it was fun learning the intrinsics. Furthermore, a new fix for booting on x86 has come up, however, due to some spaghetti code on my part (I believe), it doesn't boot on PS/2 and Keyboard controller, weirdly enough it boots on VGA. I'll see on Monday what's what. Maybe it has to do with the custom bash script I wrote to choose a feature, I don't know.
+
+## 28 July 2025
+Okay good news and bad news, I rebased my PR's based on my supervisor's fix, but it's acting strange on the controller & keyboard PR's. Spent the whole day debugging using gdb. I decided I will make a separate branch over x86/naked_functions and re-implement in small chunks to debug the controller.
