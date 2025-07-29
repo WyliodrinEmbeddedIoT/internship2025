@@ -69,3 +69,6 @@ Polished the VGA driver by removing external dependency and wrote a new spin-mut
 
 ## 28 July 2025
 Okay good news and bad news, I rebased my PR's based on my supervisor's fix, but it's acting strange on the controller & keyboard PR's. Spent the whole day debugging using gdb. I decided I will make a separate branch over x86/naked_functions and re-implement in small chunks to debug the controller.
+
+## 29 July 2025
+I had to modify some code on VGA again, hopefully it will be fine, still experimented with the controller issue, I have to figure it out how to properly fix it.
