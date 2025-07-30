@@ -72,3 +72,6 @@ Okay good news and bad news, I rebased my PR's based on my supervisor's fix, but
 
 ## 29 July 2025
 I had to modify some code on VGA again, hopefully it will be fine, still experimented with the controller issue, I have to figure it out how to properly fix it.
+
+## 30 July 2025
+I have rewritten the controller driver and I brought it to a decent state, no longer triple faults, but some things are still missing. However it's looking good and I think I can implement the rest of the features.
