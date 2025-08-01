@@ -60,3 +60,21 @@ I'd say the keyboard is 50% implemented, all of the tests at the driver level se
 
 ## 23 July 2025
 Finished up and polished the whole keyboard driver. Hopefully it works now. Next step would be to combine VGA + 8042 + Keyboard in order to add the text capsule over the keyboard.
+
+## 24 July 2025
+;-; I had to remove the HIL implementation from the controller and keyboard, teacher said it was too much. I'll miss it. I made sure the drivers are working and still function properly without HIL by exposing the required functions. Polished them up a bit. Tomorrow should do the same for the good old VGA driver.
+
+## 25 July 2025
+Polished the VGA driver by removing external dependency and wrote a new spin-mutex primitive. I think I overdone this but it works and it was fun learning the intrinsics. Furthermore, a new fix for booting on x86 has come up, however, due to some spaghetti code on my part (I believe), it doesn't boot on PS/2 and Keyboard controller, weirdly enough it boots on VGA. I'll see on Monday what's what. Maybe it has to do with the custom bash script I wrote to choose a feature, I don't know.
+
+## 28 July 2025
+Okay good news and bad news, I rebased my PR's based on my supervisor's fix, but it's acting strange on the controller & keyboard PR's. Spent the whole day debugging using gdb. I decided I will make a separate branch over x86/naked_functions and re-implement in small chunks to debug the controller.
+
+## 29 July 2025
+I had to modify some code on VGA again, hopefully it will be fine, still experimented with the controller issue, I have to figure it out how to properly fix it.
+
+## 30 July 2025
+I have rewritten the controller driver and I brought it to a decent state, no longer triple faults, but some things are still missing. However it's looking good and I think I can implement the rest of the features.
+
+## 1 August 2025
+It seems I have hit a dead wall with debugging VGA. Something is up with how debug! is wired when init. the whole Kernel and I have ran out of ideas how to tinker with it to talk to my VGA. VGA is working but if I want to use the macro, it still gets sent to Serial, even after writting a whole new "translation" layer to send my buffer instead of serial's one. I don't know :( .
