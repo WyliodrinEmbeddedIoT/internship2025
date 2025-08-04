@@ -78,3 +78,6 @@ I have rewritten the controller driver and I brought it to a decent state, no lo
 
 ## 1 August 2025
 It seems I have hit a dead wall with debugging VGA. Something is up with how debug! is wired when init. the whole Kernel and I have ran out of ideas how to tinker with it to talk to my VGA. VGA is working but if I want to use the macro, it still gets sent to Serial, even after writting a whole new "translation" layer to send my buffer instead of serial's one. I don't know :( .
+
+## 4 August 2025
+WE FIXED VGA!!!!!! Only small changes and we can push this to tock main repo. Also took a look on controller and keyboard, implemented a similar incremental branch, but my focus right now is to make sure VGA is live and working.
