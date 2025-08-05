@@ -81,3 +81,6 @@ It seems I have hit a dead wall with debugging VGA. Something is up with how deb
 
 ## 4 August 2025
 WE FIXED VGA!!!!!! Only small changes and we can push this to tock main repo. Also took a look on controller and keyboard, implemented a similar incremental branch, but my focus right now is to make sure VGA is live and working.
+
+## 5 August 2025
+Almost ready for PR push, still need to sort out documenting the whole code. Did the same for PS/2 controller. I added polling support for the keyboard driver.
