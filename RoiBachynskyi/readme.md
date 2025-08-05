@@ -84,3 +84,47 @@
 - Tried to debug it using Arduino Uno as a slave, but it didn't work out. Then, I thought the problem was in USART connection with the computer, but sadly, not.
 - Denis told me to look at `lpc-hal`, George suggesed looking at C-implementation
 - Helped Irina with her `nxp-pac` and `chiptool` (unfortunately, it doesn't have any documentation)
+
+## 24 July 2025
+- Finally, I fixed my USART so that I can transmit bits using wires, not loopback mode. Thanks to Alex!
+- The problem was in `IOCON` register, it lacked full configuration
+- Left earlier because I had an appointment to a dentist
+
+## 25 July 2025
+- Read `embassy-rp`'s implementation of USART to understand the ownership rules and how to write driver implementation
+- Tried to help Denis with his SPI, but there's still something we both don't see
+- For the whole period I had problems with flashing of the NXP board: every time I restarted it, `probe-rs` didn't flash the board. Them problem was fixed by someone, but the change has not been used by the main branch
+- Implemented baudrate configuration for USART
+
+## 28 July 2025
+- Wrote all the blocking functions for USART, so that an array of bytes can be either read or written.
+- Had problems with reading, but it was so simple: `fifordnopop` should have been used to check the FIFO state instead of `fiford`, every reading of `fiford` register entails data loss
+
+## 29 July 2025
+- George gave me two ways of further implementation: either polishing the code out and writing the driver itself or writing the interrupt-driven version of USART
+- Started to polish the code, I was thinking a lot about how to connect USART and Flexcomm so that USART owns it
+- Came up with a very simple idea: just own the pins like `embassy` does so that it is prohibited to use the same Flexcomm twice.
+
+## 30 July 2025
+- Started to write the driver outline from scratch once again
+- I started with `impl_instance!()` to ensure that every USART has appropriate registers and can be configured,but it was a bit hard to work with `macro_rules`, but George helped me
+- Wrote some constructors and main functions for USART TX and USART RX
+
+## 31 July 2025
+- I tried to write the code so that USART struct is as generic as possible
+- However, because of Rust safety rules, it cannot deduce the used PAC type in USART struct making using of registers there impossible
+- That's why I moved all the logic into the generic `Instance` (I feel like when I make a PR, I'll have many comments, though)
+- Almost finished the implementation of blocking USART (hopefully)
+
+## 1 August 2025
+- Finished blocking USART implementation, introduced `usart_blocking.rs` as an example
+- Talked with George about further implementation of asynchronous mode with interrupts
+- Started my second [pull request](https://github.com/embassy-rs/embassy/pull/4497)
+- I spent much time to implement it, but there are still a lot of things to do. However, I like it :)
+
+## 4 August 2025
+- Had 24 comments from George and around 7 comments from the American
+- Resolved all their observations
+- A strange bug happened to me yesterday: while working on the improvements, Denis asked me to help him with blocked device. I ran `cargo run` with blinky example, then used LinkFlasher, restarted my PC, and all the contents of a folder where `embassy` fork was disappeared. Unfortunately, I didn't save my code, so I wrote what I remembered once again.
+> Do more backups.
+- Helped Irina with synchronizing her fork with the upstream and learnt how to do it using `git` in terminal
