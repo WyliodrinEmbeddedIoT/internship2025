@@ -84,3 +84,6 @@ WE FIXED VGA!!!!!! Only small changes and we can push this to tock main repo. Al
 
 ## 5 August 2025
 Almost ready for PR push, still need to sort out documenting the whole code. Did the same for PS/2 controller. I added polling support for the keyboard driver.
+
+## 6 August 2025
+Just opened a PR on tock for VGA support, should fix the requested changes. Brought the keyboard driver up to date to where it was before the "naked_functions crash". Still have to wait until VGA-8042-Keyboard are merged so I can continue feature adding work on keyboard... but I can still tweak it a bit.
