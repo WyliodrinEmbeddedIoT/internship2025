@@ -87,3 +87,6 @@ Almost ready for PR push, still need to sort out documenting the whole code. Did
 
 ## 6 August 2025
 Just opened a PR on tock for VGA support, should fix the requested changes. Brought the keyboard driver up to date to where it was before the "naked_functions crash". Still have to wait until VGA-8042-Keyboard are merged so I can continue feature adding work on keyboard... but I can still tweak it a bit.
+
+## 7 August 2025
+Removed redundant functions from the keyboard driver, kept it as basic as possible in order to wire it to VGA. Whenever someone needs one of those functions back, I'll add it. Also improved IRQ handling by calling poll() instead of those shenaningans with helper functions and 1 ms timer... should be fine. Next I should ask wether if a capsule is really needed when porting the PC to VGA, I don't know, maybe for a userspace API so that unprivileged processes could read raw key events or configure the keyboard LEDs,
