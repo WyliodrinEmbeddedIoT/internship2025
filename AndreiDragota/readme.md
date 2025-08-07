@@ -60,3 +60,33 @@ I'd say the keyboard is 50% implemented, all of the tests at the driver level se
 
 ## 23 July 2025
 Finished up and polished the whole keyboard driver. Hopefully it works now. Next step would be to combine VGA + 8042 + Keyboard in order to add the text capsule over the keyboard.
+
+## 24 July 2025
+;-; I had to remove the HIL implementation from the controller and keyboard, teacher said it was too much. I'll miss it. I made sure the drivers are working and still function properly without HIL by exposing the required functions. Polished them up a bit. Tomorrow should do the same for the good old VGA driver.
+
+## 25 July 2025
+Polished the VGA driver by removing external dependency and wrote a new spin-mutex primitive. I think I overdone this but it works and it was fun learning the intrinsics. Furthermore, a new fix for booting on x86 has come up, however, due to some spaghetti code on my part (I believe), it doesn't boot on PS/2 and Keyboard controller, weirdly enough it boots on VGA. I'll see on Monday what's what. Maybe it has to do with the custom bash script I wrote to choose a feature, I don't know.
+
+## 28 July 2025
+Okay good news and bad news, I rebased my PR's based on my supervisor's fix, but it's acting strange on the controller & keyboard PR's. Spent the whole day debugging using gdb. I decided I will make a separate branch over x86/naked_functions and re-implement in small chunks to debug the controller.
+
+## 29 July 2025
+I had to modify some code on VGA again, hopefully it will be fine, still experimented with the controller issue, I have to figure it out how to properly fix it.
+
+## 30 July 2025
+I have rewritten the controller driver and I brought it to a decent state, no longer triple faults, but some things are still missing. However it's looking good and I think I can implement the rest of the features.
+
+## 1 August 2025
+It seems I have hit a dead wall with debugging VGA. Something is up with how debug! is wired when init. the whole Kernel and I have ran out of ideas how to tinker with it to talk to my VGA. VGA is working but if I want to use the macro, it still gets sent to Serial, even after writting a whole new "translation" layer to send my buffer instead of serial's one. I don't know :( .
+
+## 4 August 2025
+WE FIXED VGA!!!!!! Only small changes and we can push this to tock main repo. Also took a look on controller and keyboard, implemented a similar incremental branch, but my focus right now is to make sure VGA is live and working.
+
+## 5 August 2025
+Almost ready for PR push, still need to sort out documenting the whole code. Did the same for PS/2 controller. I added polling support for the keyboard driver.
+
+## 6 August 2025
+Just opened a PR on tock for VGA support, should fix the requested changes. Brought the keyboard driver up to date to where it was before the "naked_functions crash". Still have to wait until VGA-8042-Keyboard are merged so I can continue feature adding work on keyboard... but I can still tweak it a bit.
+
+## 7 August 2025
+Removed redundant functions from the keyboard driver, kept it as basic as possible in order to wire it to VGA. Whenever someone needs one of those functions back, I'll add it. Also improved IRQ handling by calling poll() instead of those shenaningans with helper functions and 1 ms timer... should be fine. Next I should ask wether if a capsule is really needed when porting the PC to VGA, I don't know, maybe for a userspace API so that unprivileged processes could read raw key events or configure the keyboard LEDs,
